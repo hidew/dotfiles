@@ -112,16 +112,4 @@ else
   call unite#set_substitute_pattern('file', '^;v', '~/.vim/')
 endif
 
-"vundleópê›íË
-set nocompatible
-filetype off
-filetype plugin indent off
 
-set rtp+=~/vimfiles/vundle.git/ 
-call vundle#rc()
-
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/unite.vim'
-Bundle 'thinca/vim-ref'
-Bundle 'thinca/vim-quickrun'
-filetype plugin indent on
