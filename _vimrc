@@ -111,3 +111,22 @@ if has('win32') || has('win64')
 else
   call unite#set_substitute_pattern('file', '^;v', '~/.vim/')
 endif
+
+"vundle用設定
+set nocompatible
+filetype off
+
+"このif文が必要。
+if has("win32") || has("win64")
+  set rtp+=~/vimfiles/vundle.git/ 
+  call vundle#rc('~/vimfiles/bundle/')
+else
+  set rtp+=~/.vim/vundle.git/ 
+  call vundle#rc()
+endif
+
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
+Bundle 'thinca/vim-ref'
+Bundle 'thinca/vim-quickrun'
+filetype plugin indent on
