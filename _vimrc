@@ -118,8 +118,8 @@ filetype off
 
 "‚±‚Ìif•¶‚ª•K—vB
 if has("win32") || has("win64")
-  set rtp+=~/vimfiles/vundle.git/ 
-  call vundle#rc('~/vimfiles/bundle/')
+  set rtp+=~/Users/Hide/vimfiles/vundle.git/ 
+  call vundle#rc('~/Users/Hide/vimfiles/bundle/')
 else
   set rtp+=~/.vim/vundle.git/ 
   call vundle#rc()
