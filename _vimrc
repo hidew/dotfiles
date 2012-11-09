@@ -115,8 +115,9 @@ endif
 "vundleópê›íË
 set nocompatible
 filetype off
+filetype plugin indent off
 
-set rtp+=~/Users/Hide/vimfiles/vundle.git/ 
+set rtp+=~/vimfiles/vundle.git/ 
 call vundle#rc()
 
 Bundle 'Shougo/neocomplcache'
