@@ -116,14 +116,8 @@ endif
 set nocompatible
 filetype off
 
-"‚±‚Ìif•¶‚ª•K—vB
-if has("win32") || has("win64")
-  set rtp+=~/Users/Hide/vimfiles/vundle.git/ 
-  call vundle#rc('~/Users/Hide/vimfiles/bundle/')
-else
-  set rtp+=~/.vim/vundle.git/ 
-  call vundle#rc()
-endif
+set rtp+=~/Users/Hide/vimfiles/vundle.git/ 
+call vundle#rc()
 
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
