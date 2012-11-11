@@ -71,7 +71,7 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
     imap <> <><Left>
 
 "IME‚Å‚Ìon/offFİ’è
-hi CursorIM  guifg=black  guibg=green  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
+hi CursorIM  guifg=green  guibg=red  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
 
 "uniteİ’è
 """ unite.vim
