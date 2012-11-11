@@ -63,12 +63,12 @@ set list
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:< 
 
 "Š‡ŒÊ‚Ì’†‚É–ß‚é
-    imap {} {}<Left>  
-    imap [] []<Left>  
-    imap () ()<Left>  
-    imap "" ""<Left>  
-    imap '' ''<Left>  
-    imap <> <><Left>  
+    imap {} {}<Left>
+    imap [] []<Left>
+    imap () ()<Left>
+    imap "" ""<Left>
+    imap '' ''<Left>
+    imap <> <><Left>
 
 "IME‚Å‚Ìon/offFİ’è
 hi CursorIM  guifg=black  guibg=green  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
