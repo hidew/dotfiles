@@ -45,7 +45,7 @@ au FileType verilog :set dict=~/vim/dict/verilog.dict
 let g:buftabs_only_basename=1
 "背景を半透明に
 gui
-set transparency=220
+set transparency=180
 "改行コードを自動認識
 "set fileformat=unix,dos,mac
 "バッファの一覧表示bufferlist
@@ -71,7 +71,11 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
     imap <> <><Left>
 
 "IMEでのon/off色設定
+<<<<<<< HEAD
 hi CursorIM  guifg=black  guibg=orange  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
+=======
+hi CursorIM  guifg=green  guibg=red  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
+>>>>>>> 859f25ee4893258ff146c496d468bace9bcdf239
 
 "unite設定
 """ unite.vim
