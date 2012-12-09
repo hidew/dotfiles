@@ -45,7 +45,7 @@ au FileType verilog :set dict=~/vim/dict/verilog.dict
 let g:buftabs_only_basename=1
 "背景を半透明に
 gui
-set transparency=180
+set transparency=200
 "改行コードを自動認識
 "set fileformat=unix,dos,mac
 "バッファの一覧表示bufferlist
