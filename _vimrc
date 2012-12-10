@@ -71,11 +71,7 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
     imap <> <><Left>
 
 "IMEでのon/off色設定
-<<<<<<< HEAD
 hi CursorIM  guifg=black  guibg=orange  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
-=======
-hi CursorIM  guifg=green  guibg=red  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
->>>>>>> 859f25ee4893258ff146c496d468bace9bcdf239
 
 "unite設定
 """ unite.vim
@@ -116,4 +112,9 @@ else
   call unite#set_substitute_pattern('file', '^;v', '~/.vim/')
 endif
 
-
+"カレントディレクトリを自動的に移動
+augroup BufferAu
+    autocmd!
+    " カレントディレクトリを自動的に移動
+    autocmd BufNewFile,BufRead,BufEnter * if isdirectory(expand("%:p:h")) && bufname("%") !~ "NERD_tree" | cd %:p:h | endif
+augroup END
