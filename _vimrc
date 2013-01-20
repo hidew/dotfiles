@@ -69,9 +69,11 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
     imap "" ""<Left>
     imap '' ''<Left>
     imap <> <><Left>
+    imap （）（）<Left>
+    imap $$ $$<Left>
 
 "IMEでのon/off色設定
-hi CursorIM  guifg=black  guibg=orange  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
+hi CursorIM  guifg=black  guibg=red  gui=NONE  ctermfg=black  ctermbg=white  cterm=reverse
 
 "unite設定
 """ unite.vim
